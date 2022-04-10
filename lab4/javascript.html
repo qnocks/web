@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext"
+        rel="stylesheet">
+    <title>Нейросути</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="header__logo">
+                    <div>Нейросути</div>
+                </a>
+
+                <nav class="nav">
+                    <a class="nav__link" href="second.html">Как это работает?</a>
+                    <a class="nav__link" href="sources.html">Источники информации</a>
+                    <a class="nav__link" href="javascript.html">JavaScript</a>
+                    <a class="nav__link" href="#">Анкета</a>
+                    <a class="nav__link" href="#">БД</a>
+                    <a class="nav__link" href="#">XML</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h2 class="intro__suptitle">Источники информации</h2>
+                <h1 class="intro__title">Нейронные сети</h1>
+
+                <a class="btn" href="second.html">Главная страница</a>
+            </div>
+        </div>
+    </div><!-- /.intro -->
+
+    <section class="section">
+        <div class="container">
+
+            <div class="section__header">
+                <h3 class="section__suptitle">Скрипт</h3>
+                <h2 class="section__title">Задание</h2>
+                <div class="section__text">
+                    <p>Написать алгоритм, который заполняет матрицу произвольного размера по образцу</p>
+                </div>
+            </div>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>9</td>
+                        <td>8</td>
+                        <td>7</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div><!-- /.container -->
+    </section>
+
+    <section class="section">
+        <div class="container">
+
+            <div class="section__header">
+                <h3 class="section__suptitle">Скрипт</h3>
+                <h2 class="section__title">Решение</h2>
+            </div>
+            <table>
+                <tr>
+                    <td>Задайте размеры матрицы</td>
+                    <td>
+                        <select id="sizen">
+                            <option selected="selected" value="4">4</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                        <select id="sizem">
+                            <option selected="selected" value="4">4</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </td>
+                    <td>
+                        <button onclick="createMatrix('matrix1')">Создать матрицу</button>
+                    </td>
+                    <td><button onclick="calc()">Вычислить</button></td>
+                </tr>
+
+                <tr></tr>
+                <tr style="height: 125px">
+                    <td id="matrix1" colspan="2"></td>
+                    <td id="matrix2" colspan="2"></td>
+                </tr>
+            </table>
+        </div><!-- /.container -->
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section__header">
+                <h3 class="section__suptitle">Таблица</h3>
+                <h2 class="section__title">Создать/удалить элемент</h2>
+                <div class="section__text">
+                    <form>
+                        <div class="input-row">
+                            <label for="url">URL:</label><br />
+                            <input type="text" name="url" id="url" />
+                        </div>
+                        <div class="input-row">
+                            <label for="website">Website Name:</label><br />
+                            <input type="text" name="website" id="website" />
+                        </div>
+                        <br />
+                        <button class="but">Add</button>
+                    </form>
+
+                    <table id="crud-table">
+                        <thead>
+                            <tr>
+                                <th>URL</th>
+                                <th>Website</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="crud-tbody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div><!-- /.container -->
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section__header">
+                <h3 class="section__suptitle">Изменение цвета элемента</h3>
+                <h2 class="section__title">Вывоз alert</h2>
+                <button class="but" type="submit" id="author" onclick="greetings();">Нажми</button>
+            </div>
+        </div><!-- /.container -->
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section__header">
+                <h3 class="section__suptitle">Часы</h3>
+                <h2 class="section__title">В формате ЧЧ:ММ</h2>
+                <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+            </div>
+        </div><!-- /.container -->
+    </section>
+
+    <footer class="section footer">
+        <div class="container">
+
+            <div class="section__header">
+                <h3 class="section__suptitle">Нейросути</h3>
+                <h2 class="section__title">Контакты</h2>
+            </div>
+
+            <div class="services">
+                <div class="services__item">
+                    <img class="services__icon" src="assets/images/services/seo.png" alt="">
+
+                    <div class="services__title">Litres</div>
+                    <a href="https://www.litres.ru/" style="text-decoration: none;">
+                        <div class="services__text">Читай нас</div>
+                    </a>
+                </div>
+                <div class="services__item">
+                    <img class="services__icon" src="assets/images/services/digital.png" alt="">
+
+                    <div class="services__title">GitHub</div>
+                    <a href="https://github.com/" style="text-decoration: none;">
+                        <div class="services__text">Смотри наши исходные коды</div>
+                    </a>
+                </div>
+                <div class="services__item">
+                    <img class="services__icon" src="assets/images/services/creativity.png" alt="">
+
+                    <div class="services__title">Instagram</div>
+                    <a href="https://www.instagram.com/" style="text-decoration: none;">
+                        <div class="services__text">Следи за обновлениями</div>
+                    </a>
+                </div>
+            </div>
+        </div><!-- /.container -->
+    </footer>
+</body>
+<script type="text/javascript">
+    function greetings() {
+        document.getElementById("author").style =
+            "background-color:" +
+            "#" +
+            (Math.random().toString(16) + "000000")
+                .substring(2, 8)
+                .toUpperCase() +
+            ";";
+        alert('Останин Роман Олегович 4933');
+    }
+
+    function crudTable() {
+        const formEl = document.querySelector("form");
+        const tbodyEl = document.getElementById("crud-tbody");
+        const tableEl = document.getElementById("crud-table");
+        function onAddWebsite(e) {
+            e.preventDefault();
+            const website = document.getElementById("website").value;
+            const url = document.getElementById("url").value;
+            tbodyEl.innerHTML += `
+            <tr>
+                <td>${url}</td>
+                <td>${website}</td>
+                <td style="width:40px"><button class="deleteBtn">Delete</button></td>
+            </tr>
+        `;
+        }
+
+        function onDeleteRow(e) {
+            if (!e.target.classList.contains("deleteBtn")) {
+                return;
+            }
+
+            const btn = e.target;
+            btn.closest("tr").remove();
+        }
+
+        formEl.addEventListener("submit", onAddWebsite);
+        tableEl.addEventListener("click", onDeleteRow);
+    }
+
+    function showTime() {
+        var date = new Date();
+        var h = date.getHours(); // 0 - 23
+        var m = date.getMinutes(); // 0 - 59
+        // var s = date.getSeconds(); // 0 - 59
+        var session = "AM";
+
+        if (h == 0) {
+            h = 12;
+        }
+
+        if (h > 12) {
+            h = h - 12;
+            session = "PM";
+        }
+
+        h = (h < 10) ? "0" + h : h;
+        m = (m < 10) ? "0" + m : m;
+        // s = (s < 10) ? "0" + s : s;
+
+        var time = h + ":" + m + ":" + " " + session;
+        document.getElementById("MyClockDisplay").innerText = time;
+        document.getElementById("MyClockDisplay").textContent = time;
+
+        setTimeout(showTime, 1000);
+    }
+
+    function createMatrix(obj) {
+        // создание матрицы
+        var res = "",
+            sizen = document.getElementById("sizen"),
+            sizem = document.getElementById("sizem"),
+            n = sizen.options[sizen.selectedIndex].value,
+            m = sizem.options[sizem.selectedIndex].value;
+
+        for (var i = 0; i < n; i++) {
+            for (var j = 0; j < m; j++) {
+                res +=
+                    '<input style="width: 40px;" type="text" id="a' +
+                    (i + 1) +
+                    (j + 1) +
+                    '" />';
+            }
+            res += "<br/>";
+        }
+        document.getElementById(obj).innerHTML = res;
+    }
+
+    function calc() {
+        const M = sizen.options[document.getElementById("sizen").selectedIndex].value;
+        const N = sizen.options[document.getElementById("sizem").selectedIndex].value;
+        let nums = Array.from(Array(M), () => new Array(N))
+
+        let k = 1;
+        let f = M * N;
+
+        for (let i = 0; i < M; i++) {
+            if (i % 2 == 0) {
+                for (let j = 0; j < N; j++) {
+                    nums[i][j] = k++;
+                }
+            } else {
+                f = k + N;
+                for (let j = 0; j < N; j++) {
+                    nums[i][j] = --f;
+                    k++;
+                }
+            }
+        }
+
+        console.log(nums);
+        let prettyNums = JSON.stringify(nums)
+        prettyNums = prettyNums;
+
+    }
+
+
+    showTime();
+    crudTable();
+</script>
+
+</html>
