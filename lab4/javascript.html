@@ -51,6 +51,7 @@
                     <p>Написать алгоритм, который заполняет матрицу произвольного размера по образцу</p>
                 </div>
             </div>
+
             <table class="table">
                 <tbody>
                     <tr>
@@ -87,39 +88,30 @@
                 <h3 class="section__suptitle">Скрипт</h3>
                 <h2 class="section__title">Решение</h2>
             </div>
-            <table>
-                <tr>
-                    <td>Задайте размеры матрицы</td>
-                    <td>
-                        <select id="sizen">
-                            <option selected="selected" value="4">4</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                        </select>
-                        <select id="sizem">
-                            <option selected="selected" value="4">4</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                        </select>
-                    </td>
-                    <td>
-                        <button onclick="createMatrix('matrix1')">Создать матрицу</button>
-                    </td>
-                    <td><button onclick="calc()">Вычислить</button></td>
-                </tr>
 
-                <tr></tr>
-                <tr style="height: 125px">
-                    <td id="matrix1" colspan="2"></td>
-                    <td id="matrix2" colspan="2"></td>
-                </tr>
-            </table>
+            <div class="section__text">
+                <h3>Задайте размеры матрицы</h3>
+                <select id="rows">
+                    <option selected="selected" value="4">4</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+                <select id="columns">
+                    <option selected="selected" value="4">4</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+                <button onclick="lab3Script()">Вычислить</button>
+            </div>
+
+            
+            <table id="script-table" class="table"></table>
         </div><!-- /.container -->
     </section>
 
@@ -161,8 +153,8 @@
         <div class="container">
             <div class="section__header">
                 <h3 class="section__suptitle">Изменение цвета элемента</h3>
-                <h2 class="section__title">Вывоз alert</h2>
-                <button class="but" type="submit" id="author" onclick="greetings();">Нажми</button>
+                <h2 id="colored" class="section__title">Вывоз alert</h2>
+                <button class="but" type="submit" onmouseover="greetings();">Нажми</button>
             </div>
         </div><!-- /.container -->
     </section>
@@ -216,7 +208,7 @@
 </body>
 <script type="text/javascript">
     function greetings() {
-        document.getElementById("author").style =
+        document.getElementById("colored").style =
             "background-color:" +
             "#" +
             (Math.random().toString(16) + "000000")
@@ -286,10 +278,10 @@
     function createMatrix(obj) {
         // создание матрицы
         var res = "",
-            sizen = document.getElementById("sizen"),
-            sizem = document.getElementById("sizem"),
-            n = sizen.options[sizen.selectedIndex].value,
-            m = sizem.options[sizem.selectedIndex].value;
+            columns = document.getElementById("columns"),
+            rows = document.getElementById("rows"),
+            n = columns.options[columns.selectedIndex].value,
+            m = rows.options[rows.selectedIndex].value;
 
         for (var i = 0; i < n; i++) {
             for (var j = 0; j < m; j++) {
@@ -304,9 +296,11 @@
         document.getElementById(obj).innerHTML = res;
     }
 
-    function calc() {
-        const M = sizen.options[document.getElementById("sizen").selectedIndex].value;
-        const N = sizen.options[document.getElementById("sizem").selectedIndex].value;
+    function lab3Script() {
+        const M = Number(columns.options[document.getElementById("rows").selectedIndex].value);
+        const N = Number(columns.options[document.getElementById("columns").selectedIndex].value);
+        // const M = 4;
+        // const N = 4;
         let nums = Array.from(Array(M), () => new Array(N))
 
         let k = 1;
@@ -327,11 +321,21 @@
         }
 
         console.log(nums);
-        let prettyNums = JSON.stringify(nums)
-        prettyNums = prettyNums;
 
+        const table = document.getElementById('script-table');
+        table.innerHTML = "";
+
+        for (var i = 0; i < M; i++) {
+            var tr = document.createElement('tr');
+            table.appendChild(tr);
+
+            for (var j = 0; j < N; j++) {
+                var td = document.createElement('td');
+                td.innerHTML = nums[i][j];
+                tr.appendChild(td);
+            }
+        }
     }
-
 
     showTime();
     crudTable();

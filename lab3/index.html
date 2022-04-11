@@ -2,54 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
     <title>Нейросути</title>
 </head>
 <body>
 
-
-<header>
-    <div>
-        <div>
-            <a href="index.html"><div>Нейросути</div></a>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo"><div>Нейросути</div></a>
 
             <nav class="nav">
-                <a href="second.html">Как это работает?</a>
-                <a href="sources.html">Источники информации</a>
-                <a href="#">JavaScript</a>
-                <a href="#">Анкета</a>
-                <a href="#">БД</a>
-                <a href="#">XML</a>
+                <a class="nav__link" href="second.html">Как это работает?</a>
+                <a class="nav__link" href="sources.html">Источники информации</a>
+                <a class="nav__link" href="javascript.html">JavaScript</a>
+                <a class="nav__link" href="#">Анкета</a>
+                <a class="nav__link" href="#">БД</a>
+                <a class="nav__link" href="#">XML</a>
             </nav>
         </div>
     </div>
 </header>
 
 
-<div >
-    <div>
-        <div>
-            <h2>Знакомство</h2>
-            <h1>Нейронные сети</h1>
+<div class="intro">
+    <div class="container">
+        <div class="intro__inner">
+            <h2 class="intro__suptitle">Знакомство</h2>
+            <h1 class="intro__title">Нейронные сети</h1>
 
-            <a href="second.html">Подробнее</a>
+            <a class="btn" href="second.html">Подробнее</a>
         </div>
     </div>
 </div><!-- /.intro -->
 
-<section>
-    <div>
+<section class="section">
+    <div class="container">
 
-        <div>
-            <h3>Вступление</h3>
-            <h2>Hello World!</h2>
-            <div>
+        <div class="section__header">
+            <h3 class="section__suptitle">Вступление</h3>
+            <h2 class="section__title">Hello World!</h2>
+            <div class="section__text">
                 <p>В мире машинного обучения тоже есть свой Hello world и это нейросеть решающая проблему исключающего
                     или(XOR). Таблица исключающего или выглядит следующим образом:</p>
             </div>
         </div>
 
-        <table border="2">
+        <table class="table">
             <thead>
                 <tr>
                     <th>a</th>
@@ -59,23 +59,23 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td><img class="table__img" src="assets/images/table-0.jpg" alt=""></td>
+                    <td><img class="table__img" src="assets/images/table-0.jpg" alt=""></td>
+                    <td><img class="table__img" src="assets/images/table-0.jpg" alt=""></td>
                 </tr>
                 <tr>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>1</td>
+                    <td><img class="table__img" src="assets/images/table-0.jpg" alt=""></td>
+                    <td><img class="table__img" src="assets/images/table-0.jpg" alt=""></td>
+                    <td><img class="table__img" src="assets/images/table-1.jpg" alt=""></td>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>1</td>
+                    <td><img class="table__img" src="assets/images/table-1.jpg" alt=""></td>
+                    <td><img class="table__img" src="assets/images/table-0.jpg" alt=""></td>
+                    <td><img class="table__img" src="assets/images/table-1.jpg" alt=""></td>
                 </tr>
                 <tr>
-                    <td colspan="2">1</td>
-                    <td>0</td>
+                    <td colspan="2"><img class="table__img" src="assets/images/table-1.jpg" alt=""></td>
+                    <td><img class="table__img" src="assets/images/table-0.jpg" alt=""></td>
                 </tr>
             </tbody>
         </table>
@@ -84,13 +84,13 @@
 
 
 
-<section>
-    <div>
+<section class="section">
+    <div class="container">
 
-        <div>
-            <h3>Что такое нейронная сеть</h3>
-            <h2>Определение</h2>
-            <div>
+        <div class="section__header">
+            <h3 class="section__suptitle">Что такое нейронная сеть</h3>
+            <h2 class="section__title">Определение</h2>
+            <div class="section__text">
                 <p>Нейронная сеть — это последовательность нейронов, соединенных между собой синапсами. Структура нейронной
                     сети пришла в мир программирования прямиком из биологии. Благодаря такой структуре, машина обретает
                     способность анализировать и даже запоминать различную информацию. Нейронные сети также способны не только
@@ -110,7 +110,7 @@
                 <p>Нейронные сети используются для решения сложных задач, которые требуют аналитических вычислений подобных
                     тем, что делает человеческий мозг. Самыми распространенными применениями нейронных сетей является:
                 </p>
-                <ul>
+                <ul class="section__text__list">
                     <li>
                         Классификация
                         <ul>
@@ -139,22 +139,22 @@
             </div>
         </div>
 
-        <div>
-            <div>
-                <div>
-                    <img src="../lab2/assets/images/about/1.jpg" alt="">
+        <div class="about">
+            <div class="about__item">
+                <div class="about__img">
+                    <img src="assets/images/about/1.jpg" alt="">
                 </div>
             </div>
 
-            <div>
-                <div>
-                    <img src="../lab2/assets/images/about/2.jpg" alt="">
+            <div class="about__item">
+                <div class="about__img">
+                    <img src="assets/images/about/2.jpg" alt="">
                 </div>
             </div>
 
-            <div>
-                <div>
-                    <img src="../lab2/assets/images/about/3.jpg" alt="">
+            <div class="about__item">
+                <div class="about__img">
+                    <img src="assets/images/about/3.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -162,13 +162,13 @@
     </div><!-- /.container -->
 </section>
 
-<section>
-    <div>
+<section class="section">
+    <div class="container">
 
-        <div>
-            <h3>Что такое нейрон</h3>
-            <h2>Определение</h2>
-            <div>
+        <div class="section__header">
+            <h3 class="section__suptitle">Что такое нейрон</h3>
+            <h2 class="section__title">Определение</h2>
+            <div class="section__text">
                 <p>Нейрон — это вычислительная единица, которая получает информацию, производит над ней простые вычисления и
                     передает ее дальше. Они делятся на три основных типа: входной
                     (синий), скрытый (красный) и выходной (зеленый). Также есть нейрон смещения и контекстный нейрон о
@@ -196,22 +196,22 @@
             </div>
         </div>
 
-        <div>
-            <div>
-                <div>
-                    <img src="../lab2/assets/images/about/4.jpg" alt="">
+        <div class="about">
+            <div class="about__item">
+                <div class="about__img">
+                    <img src="assets/images/about/4.jpg" alt="">
                 </div>
             </div>
 
-            <div>
-                <div>
-                    <img src="../lab2/assets/images/about/5.jpg" alt="">
+            <div class="about__item">
+                <div class="about__img">
+                    <img src="assets/images/about/5.jpg" alt="">
                 </div>
             </div>
 
-            <div>
-                <div>
-                    <img src="../lab2/assets/images/about/6.jpg" alt="">
+            <div class="about__item">
+                <div class="about__img">
+                    <img src="assets/images/about/6.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -221,31 +221,31 @@
 </section>
 
 
-<footer>
-    <div>
+<footer class="section footer">
+    <div class="container">
 
-        <div>
-            <h3>Нейросути</h3>
-            <h2>Контакты</h2>
+        <div class="section__header">
+            <h3 class="section__suptitle">Нейросути</h3>
+            <h2 class="section__title">Контакты</h2>
         </div>
 
-        <div>
-            <div>
-                <img src="../lab2/assets/images/services/seo.png" alt="">
+        <div class="services">
+            <div class="services__item">
+                <img class="services__icon" src="assets/images/services/seo.png" alt="">
 
-                <div>Litres</div>
-                <a href="https://www.litres.ru/" style="text-decoration: none;"><div>Читай нас</div></a>
+                <div class="services__title">Litres</div>
+                <a href="https://www.litres.ru/" style="text-decoration: none;"><div class="services__text">Читай нас</div></a>
             </div>
-            <div>
-                <img class="services__icon" src="../lab2/assets/images/services/digital.png" alt="">
+            <div class="services__item">
+                <img class="services__icon" src="assets/images/services/digital.png" alt="">
 
                 <div class="services__title">GitHub</div>
-                <a href="https://github.com/" style="text-decoration: none;"><div>Смотри наши исходные коды</div></a>
+                <a href="https://github.com/" style="text-decoration: none;"><div class="services__text">Смотри наши исходные коды</div></a>
             </div>
-            <div>
-                <img src="../lab2/assets/images/services/creativity.png" alt="">
+            <div class="services__item">
+                <img class="services__icon" src="assets/images/services/creativity.png" alt="">
 
-                <div>Instagram</div>
+                <div class="services__title">Instagram</div>
                 <a href="https://www.instagram.com/" style="text-decoration: none;"><div class="services__text">Следи за обновлениями</div></a>
             </div>
         </div>
