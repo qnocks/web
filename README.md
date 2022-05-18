@@ -77,7 +77,7 @@ Prepare several scenarios for the tasks below. Embed all scripts in the site fro
 
 ### Task #5
 
-Based on the examples given, prepare a web page where the user enters several values ​​and sends them to the server. After sending to the server, the entered data is printed on the page. The variant determines the type of request sent to the server (get or post) and the appearance of the displayed data. In addition, the variant specifies an additional form element that you need to master and include in the form yourself.
+Based on the examples given, prepare a web page where the user enters several values and sends them to the server. After sending to the server, the entered data is printed on the page. The variant determines the type of request sent to the server (get or post) and the appearance of the displayed data. In addition, the variant specifies an additional form element that you need to master and include in the form yourself.
 The questionnaire questions should reflect the theme of the site chosen in laboratory work No. 1. Mandatory form fields for the questionnaire: full name, list with a choice of values, a set of checkboxes (checkbox), a set of radio buttons (radio).
 The server script is written in python.
 When using the get method, the contents of the address bar should be included in the report after receiving a response from the server.
