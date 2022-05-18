@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <title>Нейросути</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo"><div>Нейросути</div></a>
+
+            <nav class="nav">
+                <a class="nav__link" href="second.html">Как это работает?</a>
+                <a class="nav__link" href="sources.html">Источники информации</a>
+                <a class="nav__link" href="javascript.html">JavaScript</a>
+                <a class="nav__link" href="#">Анкета</a>
+                <a class="nav__link" href="db.php">БД</a>
+                <a class="nav__link" href="lab7.html">Ajax</a>
+                <a class="nav__link" href="#">XML</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+<div class="intro">
+    <div class="container">
+        <div class="intro__inner">
+            <h2 class="intro__suptitle">Знакомство</h2>
+            <h1 class="intro__title">Нейронные сети</h1>
+
+            <a class="btn" href="second.html">Подробнее</a>
+        </div>
+    </div>
+</div><!-- /.intro -->
+
+<section class="section">
+    <div class="container">
+
+        <div class="section__header">
+            <h3 class="section__suptitle">Вступление</h3>
+            <h2 class="section__title">Hello World!</h2>
+            <div class="section__text">
+                <p>В мире машинного обучения тоже есть свой Hello world и это нейросеть решающая проблему исключающего
+                    или(XOR). Таблица исключающего или выглядит следующим образом:</p>
+            </div>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>a</th>
+                    <th>b</th>
+                    <th>c</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img class="table__img" src="assets/images/table-0.jpg" alt=""></td>
+                    <td><img class="table__img" src="assets/images/table-0.jpg" alt=""></td>
+                    <td><img class="table__img" src="assets/images/table-0.jpg" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img class="table__img" src="assets/images/table-0.jpg" alt=""></td>
+                    <td><img class="table__img" src="assets/images/table-0.jpg" alt=""></td>
+                    <td><img class="table__img" src="assets/images/table-1.jpg" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img class="table__img" src="assets/images/table-1.jpg" alt=""></td>
+                    <td><img class="table__img" src="assets/images/table-0.jpg" alt=""></td>
+                    <td><img class="table__img" src="assets/images/table-1.jpg" alt=""></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><img class="table__img" src="assets/images/table-1.jpg" alt=""></td>
+                    <td><img class="table__img" src="assets/images/table-0.jpg" alt=""></td>
+                </tr>
+            </tbody>
+        </table>
+    </div><!-- /.container -->
+</section>
+
+
+
+<section class="section">
+    <div class="container">
+
+        <div class="section__header">
+            <h3 class="section__suptitle">Что такое нейронная сеть</h3>
+            <h2 class="section__title">Определение</h2>
+            <div class="section__text">
+                <p>Нейронная сеть — это последовательность нейронов, соединенных между собой синапсами. Структура нейронной
+                    сети пришла в мир программирования прямиком из биологии. Благодаря такой структуре, машина обретает
+                    способность анализировать и даже запоминать различную информацию. Нейронные сети также способны не только
+                    анализировать входящую информацию, но и воспроизводить ее из своей памяти. Заинтересовавшимся обязательно к
+                    просмотру 2 видео из TED Talks: Видео 1, Видео 2). Другими словами, нейросеть это машинная интерпретация
+                    мозга человека, в котором находятся миллионы нейронов передающих информацию в виде электрических импульсов.
+                    <br>
+                    <br>
+                    Какие бывают нейронные сети?
+                    <br>
+                    <br>
+                    Пока что мы будем рассматривать примеры на самом базовом типе нейронных сетей — это сеть прямого
+                    распространения (далее СПР). Также в последующих статьях я введу больше понятий и расскажу вам о
+                    рекуррентных нейронных сетях. СПР как вытекает из названия это сеть с последовательным соединением нейронных
+                    слоев, в ней информация всегда идет только в одном направлении.
+                </p>
+                <p>Нейронные сети используются для решения сложных задач, которые требуют аналитических вычислений подобных
+                    тем, что делает человеческий мозг. Самыми распространенными применениями нейронных сетей является:
+                </p>
+                <ul class="section__text__list">
+                    <li>
+                        Классификация
+                        <ul>
+                            <li>классификация типов товаров по изображению</li>
+                            <li>например, на вход дается набор людей и нужно решить, кому из них давать кредит, а кому нет.
+                                Эту работу может сделать нейронная сеть, анализируя такую информацию как: возраст,
+                                платежеспособность, кредитная история и тд.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Предсказание
+                        <ul>
+                            <li>"умные" плейлисты музыки</li>
+                            <li>рост или падение акций, основываясь на ситуации на фондовом рынке.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Распознавание
+                        <ul>
+                            <li>распознавание речь по губам человека</li>
+                            <li>используется в Google, когда вы ищете фото или в камерах телефонов, когда оно определяет
+                                положение вашего лица и выделяет его и многое другое</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="about__item">
+                <div class="about__img">
+                    <img src="assets/images/about/1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="about__item">
+                <div class="about__img">
+                    <img src="assets/images/about/2.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="about__item">
+                <div class="about__img">
+                    <img src="assets/images/about/3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /.container -->
+</section>
+
+<section class="section">
+    <div class="container">
+
+        <div class="section__header">
+            <h3 class="section__suptitle">Что такое нейрон</h3>
+            <h2 class="section__title">Определение</h2>
+            <div class="section__text">
+                <p>Нейрон — это вычислительная единица, которая получает информацию, производит над ней простые вычисления и
+                    передает ее дальше. Они делятся на три основных типа: входной
+                    (синий), скрытый (красный) и выходной (зеленый). Также есть нейрон смещения и контекстный нейрон о
+                    которых мы поговорим в следующей статье. В том случае, когда нейросеть
+                    состоит из большого количества нейронов, вводят термин слоя. Соответственно, есть входной слой, который
+                    получает информацию, n скрытых слоев (обычно их не больше 3),
+                    которые ее обрабатывают и выходной слой, который выводит результат. У каждого из нейронов есть 2
+                    основных параметра: входные данные (input data) и выходные данные (output data).
+                    В случае входного нейрона: input=output. В остальных, в поле input попадает суммарная информация всех
+                    нейронов с предыдущего слоя, после чего, она нормализуется,
+                    с помощью функции активации (пока что просто представим ее f(x)) и попадает в поле output.
+                </p>
+                <p>Важно помнить, что нейроны оперируют числами в диапазоне [0,1] или [-1,1]. А как же, вы спросите, тогда
+                    обрабатывать числа, которые выходят из данного диапазона? На данном этапе, самый простой ответ — это разделить
+                    1 на это число. Этот процесс называется нормализацией, и он очень часто используется в нейронных сетях. Подробнее об этом чуть позже.
+                </p>
+                <p>Синапс это связь между двумя нейронами. У синапсов есть 1 параметр — вес. Благодаря ему, входная информация изменяется,
+                    когда передается от одного нейрона к другому. Допустим, есть 3 нейрона, которые передают информацию следующему.
+                    Тогда у нас есть 3 веса, соответствующие каждому из этих нейронов. У того нейрона, у которого вес будет больше,
+                    та информация и будет доминирующей в следующем нейроне (пример — смешение цветов). На самом деле, совокупность
+                    весов нейронной сети или матрица весов — это своеобразный мозг всей системы. Именно благодаря этим весам,
+                    входная информация обрабатывается и превращается в результат.
+                    Важно помнить, что во время инициализации нейронной сети, веса расставляются в случайном порядке.
+                </p>
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="about__item">
+                <div class="about__img">
+                    <img src="assets/images/about/4.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="about__item">
+                <div class="about__img">
+                    <img src="assets/images/about/5.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="about__item">
+                <div class="about__img">
+                    <img src="assets/images/about/6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+    </div><!-- /.container -->
+</section>
+
+
+<footer class="section footer">
+    <div class="container">
+
+        <div class="section__header">
+            <h3 class="section__suptitle">Нейросути</h3>
+            <h2 class="section__title">Контакты</h2>
+        </div>
+
+        <div class="services">
+            <div class="services__item">
+                <img class="services__icon" src="assets/images/services/seo.png" alt="">
+
+                <div class="services__title">Litres</div>
+                <a href="https://www.litres.ru/" style="text-decoration: none;"><div class="services__text">Читай нас</div></a>
+            </div>
+            <div class="services__item">
+                <img class="services__icon" src="assets/images/services/digital.png" alt="">
+
+                <div class="services__title">GitHub</div>
+                <a href="https://github.com/" style="text-decoration: none;"><div class="services__text">Смотри наши исходные коды</div></a>
+            </div>
+            <div class="services__item">
+                <img class="services__icon" src="assets/images/services/creativity.png" alt="">
+
+                <div class="services__title">Instagram</div>
+                <a href="https://www.instagram.com/" style="text-decoration: none;"><div class="services__text">Следи за обновлениями</div></a>
+            </div>
+        </div>
+    </div><!-- /.container -->
+</footer>
+</body>
+</html>

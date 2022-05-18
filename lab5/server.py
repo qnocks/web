@@ -1,7 +1,7 @@
 import os, sys
 from http.server import HTTPServer, CGIHTTPRequestHandler
 webdir = '.' # каталог с файлами HTML и подкаталогом cgi­bin для сценариев
-port = 80  # http://servername/ если 80, иначе http://servername:xxxx/
+port = 8090  # http://servername/ если 80, иначе http://servername:xxxx/
 
 if len(sys.argv) > 1:
     webdir = sys.argv[1]    # аргументы командной строки

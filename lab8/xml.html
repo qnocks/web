@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <title>Нейросути</title>
+</head>
+<body onload="displayResult()">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="header__logo">
+                    <div>Нейросути</div>
+                </a>
+
+                <nav class="nav">
+                    <a class="nav__link" href="second.html">Как это работает?</a>
+                    <a class="nav__link" href="sources.html">Источники информации</a>
+                    <a class="nav__link" href="javascript.html">JavaScript</a>
+                    <a class="nav__link" href="#">Анкета</a>
+                    <a class="nav__link" href="db.php">БД</a>
+                    <a class="nav__link" href="xml.html">XML</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h2 class="intro__suptitle">Знакомство</h2>
+                <h1 class="intro__title">Нейронные сети</h1>
+
+                <a class="btn" href="second.html">Подробнее</a>
+            </div>
+        </div>
+    </div><!-- /.intro -->
+
+    <section class="section">
+        <div class="container">
+            <div id="table-notation" /></div>
+            <div id="row-notation" style="margin-top: 50px;" /></div>
+        </div>
+    </section>
+</body>
+<script>
+    function loadXMLDoc(filename) {
+        if (window.ActiveXObject) {
+            xhttp = new ActiveXObject("Msxml2.XMLHTTP");
+        }
+        else { xhttp = new XMLHttpRequest(); }
+        xhttp.open("GET", filename, false);
+        try { xhttp.responseType = "msxml-document" } catch (err) { } // Helping IE11
+        xhttp.send("");
+        return xhttp.responseXML;
+    }
+
+    function displayResult() {
+
+        xml = loadXMLDoc("articles.xml");
+        xsl = loadXMLDoc("table-notation.xsl");
+        xsl2 = loadXMLDoc("row-notation.xsl");
+
+        // код для IE
+        if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
+            ex = xml.transformNode(xsl);
+            ex2 = xml.transformNode(xsl2);
+            document.getElementById("table-notation").innerHTML = ex;
+            document.getElementById("row-notation").innerHTML = ex2;
+        }
+        // код для Chrome, Firefox, Opera и др.
+        else if (document.implementation && document.implementation.createDocument) {
+            xsltProcessor = new XSLTProcessor();
+            xsltProcessor.importStylesheet(xsl);
+            resultDocument = xsltProcessor.transformToFragment(xml, document);
+            document.getElementById("table-notation").appendChild(resultDocument);
+
+            xsltProcessor2 = new XSLTProcessor();
+            xsltProcessor2.importStylesheet(xsl2);
+            resultDocument2 = xsltProcessor2.transformToFragment(xml, document);
+            document.getElementById("row-notation").appendChild(resultDocument2);
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<articles>
+    <article>
+        <title>Нейронные сети: применение сегодня и перспективы развития</title>
+        <author>Фаустова К.И.</author>
+        <text>На сегодняшний момент искусственный интеллект прочно вошёл в нашу жизнь и помогает в решении большого числа задач...</text>
+        <createdAt>2020-05-05</createdAt>
+        <updatedAt>2020-06-13</updatedAt>
+        <pic>assets/images/xml/1.png</pic>
+    </article>
+    <article>
+        <title>Уточнение решения обратной задачи для нейросети-классификатора</title>
+        <author>Царегородцев В.Г</author>
+        <text>Рассматриваются вопросы уточнения и коррекции решения обратной задачи нейромоделирования при постановке...</text>
+        <createdAt>2005-12-26</createdAt>
+        <updatedAt>2007-11-13</updatedAt>
+        <pic>assets/images/xml/2.png</pic>
+    </article>
+    <article>
+        <title>On the Origin of Deep Learning</title>
+        <author>Haohan Wang</author>
+        <text>This paper is a review of the evolutionary history of deep learning models...</text>
+        <createdAt>2016-11-01</createdAt>
+        <updatedAt>2016-11-01</updatedAt>
+        <pic>assets/images/xml/3.png</pic>
+    </article>
+    <article>
+        <title>Deep reinforcement learning: an overview</title>
+        <author>Yuxi Li</author>
+        <text>We give an overview of recent exciting achievements of deep reinforcement learning (RL)...</text>
+        <createdAt>2017-06-04</createdAt>
+        <updatedAt>2017-06-04</updatedAt>
+        <pic>assets/images/xml/4.png</pic>
+    </article>
+    <article>
+        <title>Learning to Generate Chairs, Tables and Cars with Convolutional Networks</title>
+        <author>Alexey Dosovitskiy</author>
+        <text>We train generative up-convolutional neural networks which are able to generate images...</text>
+        <createdAt>2015-03-12</createdAt>
+        <updatedAt>2015-12-23</updatedAt>
+        <pic>assets/images/xml/5.png</pic>
+    </article>
+    <article>
+        <title>Image Completion with Deep Learning in TensorFlow</title>
+        <author>Brandomn Amos</author>
+        <text>Content-aware fill is a powerful tool designers and photographers use to fill in unwanted or missing parts of images...</text>
+        <createdAt>2016-09-09</createdAt>
+        <updatedAt>2018-02-26</updatedAt>
+        <pic>assets/images/xml/6.png</pic>
+    </article>
+    <article>
+        <title>Learning to generate chairs with convolutional neural network</title>
+        <author>Alexey Dosovitskiy</author>
+        <text>Convolutional neural network has been shown to be successful a variety of computer vision tasks...</text>
+        <createdAt>2015-02-02</createdAt>
+        <updatedAt>2015-01-15</updatedAt>
+        <pic>assets/images/xml/5.png</pic>
+    </article>
+    <article>
+        <title>Generative Adversarial Networks (GANs) in 50 lines of code (PyTorch)</title>
+        <author>Dev Nag</author>
+        <text>In 2014, Ian Goodfellow and his colleagues at the University of Montreal published a stunning...</text>
+        <createdAt>2017-02-11</createdAt>
+        <updatedAt>2017-02-11</updatedAt>
+        <pic>assets/images/xml/7.png</pic>
+    </article>
+    <article>
+        <title>Нейросети научили искать левозакрученную ДНК</title>
+        <author>Александра Медведева</author>
+        <text>Ученые из НИУ ВШЭ нашли способ повысить точность поиска Z-ДНК — скрученных влево участков молекулы....</text>
+        <createdAt>2020-12-16</createdAt>
+        <updatedAt>2020-12-17</updatedAt>
+        <pic>assets/images/xml/8.png</pic>
+    </article>
+    <article>
+        <title>Нейросеть обучили анализировать фотографии Солнца</title>
+        <author>Антон Курбатов</author>
+        <text>Российские и австрийские исследователи разработали нейронную сеть, которая может анализировать....</text>
+        <createdAt>2020-12-15</createdAt>
+        <updatedAt>2021-01-17</updatedAt>
+        <pic>assets/images/xml/10.jpg</pic>
+    </article>
+</articles>

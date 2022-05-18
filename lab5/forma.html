@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Програмысли | Career</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <h1>Send us your CV</h1>
+    <hr/>
+    <form enctype = "multipart/form-data" method="POST" action="./cgi-bin/tutor5.py">
+      <h3>Fill out the form</h3>
+      <p></p>
+      <table>
+        <tr>
+          <th align="right">Your name</th>
+          <td>
+            <input type="text" name="name" />
+            <tr>
+              <th align="right">Experience:</th>
+              <td>
+                <table>
+                  <td>
+                    <input
+                      type="radio"
+                      name="experience"
+                      value="No experience"
+                    />No experience
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="experience"
+                      value="1 to 2 years experience"
+                    />1 to 2 years experience
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="experience"
+                      value="3 to 5 years experience"
+                    />3 to 5 years experience
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="experience"
+                      value="Over 5 years"
+                    />Over 5 years
+                  </td>
+                </table>
+                <tr>
+                  <th align="right">Position:</th>
+                  <td>
+                    <select name="job">
+                      <option>Junior</option>
+                      <option>Middle</option>
+                      <option>Senior</option>
+                      <optionTech</option>
+                    </select>
+                    <tr>
+                      <th align="right">Tech stack:</th>
+                      <td>
+                        <table>
+                          <td>
+                            <input
+                              type="checkbox"
+                              name="program"
+                              value="Python"
+                            />Python
+                          </td>
+                          <td>
+                            <input type="checkbox" name="program" value="Cpp" />C++
+                          </td>
+                          <td>
+                            <input
+                              type="checkbox"
+                              name="program"
+                              value="JavaScrpit"
+                            />JavaScrpit
+                          </td>
+                        </table>
+                        <tr>
+                          <th align="right">Your photo:</th>
+                          <td>
+                            <input name="filename" type="file">
+                            <tr>
+                            </td>
+                        <tr>
+                          <th align="right">Transmittal letter:</th>
+                          <td>
+                            <textarea name="comment" cols="30" rows="2"></textarea>
+                            <tr>
+                              <td colspan="2" align="center">
+                                <input type="submit" value="Send" />
+                              </td>
+                            </tr>
+                          </td>
+                        </tr>
+                      </td>
+                    </tr>
+                  </td>
+                </tr>
+              </td>
+            </tr>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <hr />
+    <div id="foot"> <footer>Site powered by qnocks</footer></div>
+  </body>
+</html>

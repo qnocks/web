@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <title>Вторая страница</title>
+</head>
+<body>
+
+
+<div class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo"><div>Нейросути</div></a>
+
+            <nav class="nav">
+                <a class="nav__link" href="second.html">Как это работает?</a>
+                <a class="nav__link" href="sources.html">Источники информации</a>
+                <a class="nav__link" href="javascript.html">JavaScript</a>
+                <a class="nav__link" href="#">Анкета</a>
+                <a class="nav__link" href="db.php">БД</a>
+                <a class="nav__link" href="#">XML</a>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="intro">
+    <div class="container">
+        <div class="intro__inner">
+            <h2 class="intro__suptitle">Внутреняя работа</h2>
+            <h1 class="intro__title">Нейронные сети</h1>
+
+            <a class="btn" href="index.html">Главная страница</a>
+        </div>
+    </div>
+</div><!-- /.intro -->
+
+<div class="section">
+    <div class="container">
+
+        <div class="section__header">
+            <h3 class="section__suptitle">Вступление</h3>
+            <h2 class="section__title">Как работают нейронные сети</h2>
+            <div class="section__text">
+                <p>В данном примере изображена часть нейронной сети, где буквами I обозначены входные нейроны, буквой H — скрытый нейрон, а буквой w — веса.
+                    Из формулы видно, что входная информация — это сумма всех входных данных, умноженных на соответствующие им веса. Тогда дадим на вход 1 и 0.
+                    Пусть w1=0.4 и w2 = 0.7 Входные данные нейрона Н1 будут следующими: 1*0.4+0*0.7=0.4. Теперь когда у нас есть входные данные, мы можем
+                    получить выходные данные, подставив входное значение в функцию активации (подробнее о ней далее). Теперь, когда у нас есть выходные данные,
+                    мы передаем их дальше. И так, мы повторяем для всех слоев, пока не дойдем до выходного нейрона. Запустив такую сеть в первый раз мы увидим,
+                    что ответ далек от правильно, потому что сеть не натренирована. Чтобы улучшить результаты мы будем ее тренировать. Но прежде чем узнать как
+                    это делать, давайте введем несколько терминов и свойств нейронной сети.
+                </p>
+                <p>Функция активации — это способ нормализации входных данных (мы уже говорили об этом ранее). То есть, если на входе у вас будет большое число,
+                    пропустив его через функцию активации, вы получите выход в нужном вам диапазоне. Функций активации достаточно много поэтому мы рассмотрим самые
+                    основные: Линейная, Сигмоид (Логистическая) и Гиперболический тангенс. Главные их отличия — это диапазон значений.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="about">
+            <div class="about__item">
+                <div style="justify-content: space-between;" class="about__img">
+                    <img src="assets/images/about/7.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /.container -->
+</div>
+
+
+<div class="section">
+    <div class="container">
+
+        <div class="section__header">
+            <h3 class="section__suptitle">Определение</h3>
+            <h2 class="section__title">Функций активации</h2>
+            <div class="section__text">
+                <p>Функция активации — это способ нормализации входных данных (мы уже говорили об этом ранее). То есть, если на входе у вас будет большое число,
+                    пропустив его через функцию активации, вы получите выход в нужном вам диапазоне. Функций активации достаточно много поэтому мы рассмотрим самые
+                    основные: Линейная, Сигмоид (Логистическая) и Гиперболический тангенс. Главные их отличия — это диапазон значений.</p>
+                <p>Первая функция, линейная, почти никогда не используется, за исключением случаев, когда нужно протестировать нейронную сеть или передать значение
+                    без преобразований.</p>
+                <p>Вторая, сигмойдная - самая распространенная функция активации, ее диапазон значений [0,1]. Именно на ней показано большинство примеров в сети, также
+                    ее иногда называют логистической функцией. Соответственно, если в вашем случае присутствуют отрицательные значения (например, акции могут идти не
+                    только вверх, но и вниз), то вам понадобиться функция которая захватывает и отрицательные значения.</p>
+                <p>Имеет смысл использовать гиперболический тангенс (третья функции), только тогда, когда ваши значения могут быть и отрицательными, и положительными, так как диапазон
+                    функции [-1,1]. Использовать эту функцию только с положительными значениями нецелесообразно так как это значительно ухудшит результаты вашей нейросети.</p>
+            </div>
+        </div>
+
+
+        <div class="about">
+            <div class="about__item">
+                <div style="justify-content: space-between;" class="about__img">
+                    <img src="assets/images/about/8.jpg" alt="">
+                </div>
+            </div>
+            <div class="about__item">
+                <div style="justify-content: space-between;" class="about__img">
+                    <img src="assets/images/about/9.jpg" alt="">
+                </div>
+            </div>
+            <div class="about__item">
+                <div style="justify-content: space-between;" class="about__img">
+                    <img src="assets/images/about/10.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /.container -->
+</div>
+
+<div class="section">
+    <div class="container">
+
+        <div class="section__header">
+            <h3 class="section__suptitle">Определение</h3>
+            <h2 class="section__title">Другие термины</h2>
+            <div class="section__text">
+                <p>Тренировочный сет — это последовательность данных, которыми оперирует нейронная сеть. В нашем случае исключающего или (xor) у нас всего 4 разных
+                    исхода то есть у нас будет 4 тренировочных сета: 0xor0=0, 0xor1=1, 1xor0=1,1xor1=0.</p>
+                <p>Итерация - это своеобразный счетчик, который увеличивается каждый раз, когда нейронная сеть проходит один тренировочный сет. Другими словами, это общее количество
+                    тренировочных сетов пройденных нейронной сетью.</p>
+                <p>При инициализации нейронной сети эпоха устанавливается в 0 и имеет потолок, задаваемый вручную. Чем больше эпоха, тем лучше натренирована сеть и
+                    соответственно, ее результат. Эпоха увеличивается каждый раз, когда мы проходим весь набор тренировочных сетов, в нашем случае, 4 сетов или 4 итераций.</p>
+                <p>Важно не путать итерацию с эпохой и понимать последовательность их инкремента. Сначала n раз увеличивается итерация, а потом уже эпоха и никак не наоборот.
+                    Другими словами, нельзя сначала тренировать нейросеть только на одном сете, потом на другом и тд. Нужно тренировать каждый сет один раз за эпоху.
+                    Так, вы сможете избежать ошибок в вычислениях.</p>
+                <p>Ошибка — это процентная величина, отражающая расхождение между ожидаемым и полученным ответами. Ошибка формируется каждую эпоху и должна идти на спад.
+                    Если этого не происходит, значит, вы что-то делаете не так. Ошибку можно вычислить разными путями, но мы рассмотрим лишь три основных способа:
+                    Mean Squared Error (далее MSE), Root MSE и Arctan. Здесь нет какого-либо ограничения на использование, как в функции активации, и вы вольны выбрать любой метод,
+                    который будет приносить вам наилучший результат. Стоит лишь учитывать, что каждый метод считает ошибки по разному. У Arctan, ошибка, почти всегда, будет больше,
+                    так как он работает по принципу: чем больше разница, тем больше ошибка. У Root MSE будет наименьшая ошибка, поэтому, чаще всего, используют MSE,
+                    которая сохраняет баланс в вычислении ошибки.</p>
+                <p>Принцип подсчета ошибки во всех случаях одинаков. За каждый сет, мы считаем ошибку, отняв от идеального ответа, полученный.
+                    Далее, либо возводим в квадрат, либо вычисляем квадратный тангенс из этой разности, после чего полученное число делим на количество сетов.</p>
+            </div>
+        </div>
+
+
+        <div class="about">
+            <div class="about__item">
+                <div style="justify-content: space-between;" class="about__img">
+                    <img src="assets/images/about/11.jpg" alt="">
+                </div>
+            </div>
+            <div class="about__item">
+                <div style="justify-content: space-between;" class="about__img">
+                    <img src="assets/images/about/12.jpg" alt="">
+                </div>
+            </div>
+            <div class="about__item">
+                <div style="justify-content: space-between;" class="about__img">
+                    <img src="assets/images/about/13.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /.container -->
+</div>
+
+<div class="section footer">
+    <div class="container">
+
+        <div class="section__header">
+            <h3 class="section__suptitle">Нейросути</h3>
+            <h2 class="section__title">Контакты</h2>
+        </div>
+
+        <div class="services">
+            <div class="services__item">
+                <img class="services__icon" src="assets/images/services/seo.png" alt="">
+
+                <div class="services__title">Litres</div>
+                <a href="https://www.litres.ru/" style="text-decoration: none;"><div class="services__text">Читай нас</div></a>
+            </div>
+            <div class="services__item">
+                <img class="services__icon" src="assets/images/services/digital.png" alt="">
+
+                <div class="services__title">GitHub</div>
+                <a href="https://github.com/" style="text-decoration: none;"><div class="services__text">Смотри наши исходные коды</div></a>
+            </div>
+            <div class="services__item">
+                <img class="services__icon" src="assets/images/services/creativity.png" alt="">
+
+                <div class="services__title">Instagram</div>
+                <a href="https://www.instagram.com/" style="text-decoration: none;"><div class="services__text">Следи за обновлениями</div></a>
+            </div>
+        </div>
+    </div><!-- /.container -->
+</div>
+
+</body>
+</html>
