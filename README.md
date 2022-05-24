@@ -1,6 +1,6 @@
 # Web technologies
 
-> **Note that this repository was fast coded in copy paste way, so contains the worst practices and should not be used for education!**
+> **Note that this repository was fast coded in copy paste way, so contains the worst practices and should not be used for any purposes!**
 
 ## Topic
 
